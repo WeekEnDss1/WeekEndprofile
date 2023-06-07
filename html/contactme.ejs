@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>AnasRz</title>
+    <link rel="icon" href="/img/icon.jpeg">
+    <meta name="author" content="AnasRz">
+    <meta name="keywords" content="High level experienced Back-End Developer .">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="High level experienced Back-End Developer ">
+    <meta property="og:title" content="AnasRz">
+    <meta property="og:description" content="High level experienced Back-End Developer ">
+    <meta property="og:url" content="/">
+    <meta name="theme-color" content="#3ba55d">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    	
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+		<link rel="stylesheet" href="/css/swiper_bundle.min.css" />
+		<link href="/css/avatar.css" rel="stylesheet">
+		<script src="/js/scrollreveal.js"></script>
+			
+		<script src="/plugins/jquery/js/jquery-3.6.0.min.js"></script>
+        <link href="/plugins/animatedheadline/css/jquery.animatedheadline.css" rel="stylesheet">
+		<script src="/plugins/animatedheadline/js/jquery.animatedheadline.min.js"></script>
+		
+		<link href="/plugins/fontawesome/css/all.min.css" rel="stylesheet" />
+		<script src="/plugins/fontawesome/js/all.min.js"></script>
+		
+		<link href="/plugins/materialize/css/materialize.css" rel="stylesheet">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+		<link href="/plugins/balloon/css/balloon.min.css" rel="stylesheet">
+
+		
+		<script src="/plugins/sweetalert2/js/sweetalert2.all.min.js"></script>
+		<link href="/plugins/sweetalert2/css/dark.css" rel="stylesheet">
+		
+
+		<link rel="stylesheet" href="/css/styles.css" />
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body class="dark">
+    <nav class="sidebar close">
+        <header>
+          
+            <div class="image-text">
+                <span class="image">
+                    <img src="/img/icon.jpeg" alt="" >
+                </span>
+                
+                <div class="text logo-text">
+                   
+                    <span class="name">Anas Alrezej</span>
+                    <span class="profession">Back-End Developer</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+
+            <div class="menu">
+                <hr style="color:#695CFE">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/experience">
+                            <i class='bx bx-expand-horizontal icon' ></i>
+                            <span class="text nav-text">Experience</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/contactme">
+                            <i class='bx bx-message-minus icon' ></i>
+                            <span class="text nav-text">Contact Me </span>
+                        </a>
+                    </li>
+                 
+                   
+                </ul>
+            </div>
+            <%if(user) {%>
+                <div class="bottom-content">
+                                <li class="">
+                                    <a href="/auth/google/logout">
+                                        <i class='bx  icon' >
+                                            <div class="user-image">
+                                                <img src="<%=user._json.picture%>" style="border-radius:50%;">
+                
+                                            </div>
+                                        </i>
+                
+                                        <span class="text nav-text"><%=user.displayName%></span>
+                                    </a>
+                                </li>
+                              
+                                
+                            </div>
+                           <%} else {%>
+                            
+                            <div class="bottom-content">
+                                <li class="">
+                                    <a href="/auth/google/login">
+                                        <i class='bx bx-log-in icon' ></i>
+                                        <span class="text nav-text">Login With Google</span>
+                                    </a>
+                                </li>
+                              
+                                
+                            </div>
+                            <%}%>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="center" id="content">
+            <div class="container">
+            <div class="card-d">
+                <div class="header-d f4">Social Media Accounts</div>
+                <div class="body-d">
+                 
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/anasdevx/">
+                        <div class="social-btn flex-center">
+                            <i class="fab fa-instagram" style="color: #d44073;">                            
+                            </i>
+                            </svg><span>@anasdevx</span>
+                        </div>
+                        </a>
+                        <a href="https://twitter.com/alrezejenes">
+                            <div class="social-btn flex-center">
+                                <i class="fab fa-twitter" style="color: #4099d4;">                            
+                                </i>
+                                </svg><span>@alrezejenes</span>
+                            </div>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCknTtQ46mt2S4oI3wQ0eSrw">
+                                <div class="social-btn flex-center">
+                                    <i class="fab fa-youtube" style="color: #d53131;">                            
+                                    </i>
+                                    </svg><span>@alrezejenes</span>
+                                </div>
+                                </a>
+                                <a href="https://github.com/anasrz">
+                                    <div class="social-btn flex-center">
+                                        <i class="fab fa-github" style="color: #1d1b1b;">                            
+                                        </i>
+                                        </svg><span>@anasrz</span>
+                                    </div>
+                                    </a>
+                    
+
+                </div>
+                
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+<script>
+const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+</script>
+</body>
+</html>
