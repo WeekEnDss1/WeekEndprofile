@@ -5,7 +5,7 @@ const path = require('path')
 const youtubeThumbnail = require('youtube-thumbnail');
 const ytlist = require('youtube-playlist');
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://anas:anas@cluster0.mycnn.mongodb.net/')
+mongoose.connect('')
 app.listen(80,() => {
     console.log('listening [80] port')
 })
